@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1, minimal-ui">
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<title>Page Name</title>
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* { font-family : "Nanum Gothic";}
+body {padding-top : 70px;}
+@media (max-width : 768px)
+{
+body {padding-top : 300px;}
+}
+</style>
+<script type="text/javascript" src="js/getdata.js"></script>
+</head>
+<body data-spy = "scroll" data-target = ".bs-docs-sidebar">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <a class="navbar-brand" href="#">Brand</a>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Sub Page</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a href = "#server">Server Info</a></li>
+    <li><a href = "#cpu">CPU Info</a></li>
+    <li><a href = "#ram">RAM Info</a></li>
+</nav>
+<div class = "container">
+    <h2>Server Info</h2>
+        <blockquote>
+            <pre id = "server"></pre>
+        </blockquote>
+    <h2>Temp Info</h2>
+        <blockquote>
+            <pre id = "temp"></pre>
+        </blockquote>
+    <h2>CPU Info</h2>
+        <blockquote>
+            <pre id = "cpu"></pre>
+        </blockquote>
+    <h2>Memory Info</h2>
+        <blockquote>
+            <pre id = "ram"></pre>
+        </blockquote>
+</div>
+</body>
+</html>
