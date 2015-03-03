@@ -2,7 +2,7 @@ $(document).ready(function () {
     setInterval(function () {
         $.ajax({
             type : 'POST',
-            url : 'http://urid.kr/getData.php',
+            url : 'your getData.php location,
             success : function(data) {
                 var output = JSON.parse(data);
                 if (output.result == 1) {
@@ -12,10 +12,10 @@ $(document).ready(function () {
                     $('#temp').html(output.temp);
                 }
                 else if (output.result == 0) {
-                    $('#server').html("에러!");
-                    $('#cpu').html("에러!");
-                    $('#ram').html("에러!");
-                    $('#temp').html("에러!");
+                    $('#server').html("ERROR!");
+                    $('#cpu').html("ERROR!");
+                    $('#ram').html("ERROR!");
+                    $('#temp').html("ERROR!");
                 }
             }
         })
