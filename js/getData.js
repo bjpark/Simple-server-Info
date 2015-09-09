@@ -2,7 +2,7 @@ $(document).ready(function () {
     setInterval(function () {
         $.ajax({
             type : 'POST',
-            url : 'your getData.php location,
+            url : 'your getData.php location',
             success : function(data) {
                 var output = JSON.parse(data);
                 if (output.result == 1) {
